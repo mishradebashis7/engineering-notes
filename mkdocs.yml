@@ -1,7 +1,29 @@
 site_name: My Engineering Notes
-theme: readthedocs
+theme:
+  name: material
+  palette: 
+    # This makes it look like Overleaf (Clean White)
+    scheme: default
+    primary: indigo
+    accent: blue
+
+# This enables the "Math" translator
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+# This loads the script that renders the math
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/mathjax.js
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Home: index.md
   - FML:
-      - 'Information and Inference': 'FML/2-information-and-inference.md'
+      - 'Information and Inference': 'FML/2 Information and Inference.md'
