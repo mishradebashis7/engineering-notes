@@ -1,5 +1,7 @@
-site_name: Debashis Engineering Notes
-theme:
-  name: material
+site_name: My Engineering Notes
+theme: readthedocs
+
 nav:
   - Home: index.md
+  - FML:
+      - 'Information and Inference': 'FML/2 Information and Inference.md'
