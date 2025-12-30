@@ -56,3 +56,26 @@ Traditionally, to be more reliable, you had to repeat yourself (Repetition Codes
 
 
 
+# Test: Gaussian Distribution
+
+The **Gaussian PDF** (Probability Density Function) is defined as:
+
+$$
+p(x) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left( -\frac{(x - \mu)^2}{2\sigma^2} \right)
+$$
+
+### Properties:
+1.  **Normalization:** The area under the curve must equal 1.
+    $$
+    \int_{-\infty}^{\infty} p(x) \, dx = 1
+    $$
+2.  **Mean and Variance:**
+    * Expected Value: $E[X] = \mu$
+    * Variance: $\text{Var}(X) = \sigma^2$
+
+### Matrix Form (Multivariate)
+For a vector $\mathbf{x} \in \mathbb{R}^n$, the distribution is:
+
+$$
+\mathcal{N}(\mathbf{x} | \boldsymbol{\mu}, \boldsymbol{\Sigma}) = \frac{1}{(2\pi)^{n/2} |\boldsymbol{\Sigma}|^{1/2}} \exp \left( -\frac{1}{2} (\mathbf{x} - \boldsymbol{\mu})^T \boldsymbol{\Sigma}^{-1} (\mathbf{x} - \boldsymbol{\mu}) \right)
+$$
