@@ -4,4 +4,4 @@ theme: readthedocs
 nav:
   - Home: index.md
   - FML:
-      - 'Information and Inference': 'FML/2 Information and Inference.md'
+      - 'Information and Inference': 'FML/2-information-and-inference.md'
